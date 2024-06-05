@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Convert mbtiles to ASAR format used by Mapeo",
   "main": "lib/index.js",
+  "bin": {
+    "mbtiles-to-asar": "lib/bin.js"
+  },
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +20,7 @@
     "mkdirp": "^3.0.1",
     "rimraf": "^5.0.7",
     "tempy": "^3.1.0",
-    "tilelive-file": "^0.0.3"
+    "tilelive-file": "^0.0.3",
+    "yargs": "^17.7.2"
   }
 }
