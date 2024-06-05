@@ -2,9 +2,9 @@
 name: npm Publish
 
 on:
-  release:
-    types: [created]
-
+  push:
+    branches:
+      - main
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
