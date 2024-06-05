@@ -1,4 +1,5 @@
 .history
+default/
 # Node.js dependencies
 node_modules/
 npm-debug.log*

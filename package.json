@@ -1,19 +1,23 @@
 {
   "name": "mbtiles-to-asar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert mbtiles to ASAR format used by Mapeo",
   "main": "lib/index.js",
   "type": "module",
+  "bin": {
+    "mbtiles-to-asar": "lib/cli.js"
+  },
   "scripts": {
     "test": "DEBUG=true node ./test/test.js",
     "prepare": "husky install"
   },
   "author": "Gregor MacLennan",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@electron/asar": "^3.2.10",
     "@mapbox/mbtiles": "^0.12.1",
     "@mapbox/tilelive": "^6.1.2",
+    "commander": "^12.1.0",
     "lodash": "^4.17.21",
     "mkdirp": "^3.0.1",
     "rimraf": "^5.0.7",
