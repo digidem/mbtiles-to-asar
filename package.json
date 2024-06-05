@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "DEBUG=true node ./test/test.js",
+    "prepare": "husky install"
   },
   "author": "Gregor MacLennan",
   "license": "ISC",
@@ -18,5 +19,13 @@
     "rimraf": "^5.0.7",
     "tempy": "^3.1.0",
     "tilelive-file": "^0.0.3"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "prettier": "^3.3.1"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
