@@ -1,0 +1,18 @@
+{
+  "version": 8,
+  "name": "Mapeo Offline Map",
+  "sources": {
+    "offline-raster-tiles": {
+      "type": "raster",
+      "tiles": ["{host}/tiles/source/{z}/{x}/{y}.png"],
+      "tileSize": 256
+    }
+  },
+  "layers": [
+    {
+      "id": "tumucumaque-15-03-24",
+      "type": "raster",
+      "source": "offline-raster-tiles"
+    }
+  ]
+}
