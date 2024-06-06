@@ -1,13 +1,9 @@
-import { convertToAsar } from "../lib/index.js";
-import path from "path";
-import { fileURLToPath } from "url";
-import { dirname } from "path";
-import fs from "fs";
-import assert from "assert";
-import chalk from "chalk";
+const { convertToAsar } = require("../lib/index.js");
+const path = require("path");
+const fs = require("fs");
+const assert = require("assert");
+const chalk = require("chalk");
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 const inputPath = path.resolve(
   __dirname,
   "fixtures",
